@@ -1,0 +1,20 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "rootDir": "src",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "inlineSources": true,
+    "noEmitOnError": true,
+    "outDir": "./www/js",
+    "typeRoots": ["./node_modules/@types", "./node_modules/cordova-plugin-mapbox"]
+  },
+  "exclude": ["platforms", "node_modules", "bower_components", "plugins", "merges", "res", "bin", "bld", "www", ".cache"]
+}
