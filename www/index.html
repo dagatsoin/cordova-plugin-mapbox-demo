@@ -387,7 +387,7 @@
             Mapbox.getOfflineRegionList(
                 styleUrl,
                 function (r) {
-                    alert(JSON.stringify(r));
+                    alert(r.map(s => s.regionName).join(','));
                 });
         }
 

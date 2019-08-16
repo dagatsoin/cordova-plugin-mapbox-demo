@@ -12,7 +12,7 @@
   "dependencies": {
     "cordova-android": "^8.0.0",
     "cordova-android-support-gradle-release": "^3.0.0",
-    "cordova-plugin-mapbox": "dagatsoin/cordova-plugin-mapbox#53e91df475103cdf536859dda583cd39219f8ab3",
+    "cordova-plugin-mapbox": "dagatsoin/cordova-plugin-mapbox#6482f027a0219b8aed9497c83870b7f7ea4573e6",
     "cordova-plugin-whitelist": "^1.3.3"
   },
   "cordova": {
