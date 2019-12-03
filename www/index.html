@@ -578,24 +578,25 @@
                     Mapbox.addSource("pnj", pnjSource);
                     Mapbox.addSource('quests', questSource);
                     Mapbox.addImage("reinhart", {
-                        width: 64,
-                        height: 64,
-                        uri: "reinhart.png"
+                        width: 128,
+                        height: 128,
+                        path: "www/reinhart.png"
                     })
+
                     Mapbox.addImage("quest_start-light", {
                         width: 64,
                         height: 64,
-                        uri: "quest_start-light.png"
+                        path: "www/quest_start-light.png"
                     })
                     Mapbox.addImage("next_objective-light", {
                         width: 64,
                         height: 64,
-                        uri: "next_objective-light.png"
+                        path: "www/next_objective-light.png"
                     })
                     Mapbox.addLayer(questLayer);
                     Mapbox.addLayer(pnjLayer);
                     Mapbox.setLayoutProperty("pnj", "icon-image", "reinhart")
-
+                  
                     Mapbox.addSource("selected-feature", selectedMarkerSource);
                     Mapbox.addLayer(selectedMarker)
 
