@@ -70,7 +70,7 @@ export default class Map extends React.Component<Props, State> {
   }
 
   componentWillUnmount() {
-    Mapbox.destroy(0);
+    Mapbox.destroy();
   }
 
   private isDebug = false
@@ -290,7 +290,7 @@ export default class Map extends React.Component<Props, State> {
   }
 
   private hide() {
-    Mapbox.hide(0);
+    Mapbox.hide();
   }
 
   private isAnimationRunning = false
