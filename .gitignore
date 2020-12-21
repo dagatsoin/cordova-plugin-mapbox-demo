@@ -1,7 +1,7 @@
 .cache
 .idea
 .DS_Store
-.www
+www
 node_modules
 platforms
 plugins
