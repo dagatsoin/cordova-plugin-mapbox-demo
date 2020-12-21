@@ -22,15 +22,15 @@ export default function() {
   const downloadProgress = 100.0 * download?.state.completedResourceCount / download?.state.requiredResourceCount
   const map = useRef<Map>()
   const setRef = useCallback((view: HTMLDivElement) => setContainer(view), [])
-console.log(downloadProgress)
+
   function toggleBottomSheet(
     id: BottomSheetID | undefined,
   ) {
-    if (bottomSheetID === undefined) {
+    //if (bottomSheetID === undefined) {
       setBottomSheetID(id)
-    } else {
-      setBottomSheetID(undefined)
-    }
+    //} else {
+      //setBottomSheetID(undefined)
+    //}
   }
 
   function updateOverlayElements(isOpen: boolean, view: Animated.View) {
