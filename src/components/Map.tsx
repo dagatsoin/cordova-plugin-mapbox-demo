@@ -264,7 +264,7 @@ export default class Map extends React.Component<Props, State> {
           }
       });
       Mapbox.addLayer(pnjLayer as any);
-      Mapbox.setLayoutProperty("pnj", "icon-image", "reinhart")
+      Mapbox.setLayoutProperty("pnj", {"icon-image": "reinhart"})
     
       Mapbox.addSource("selected-feature", selectedMarkerSource as any);
       Mapbox.addLayer(selectedMarker as any)
@@ -447,17 +447,15 @@ export default class Map extends React.Component<Props, State> {
 
   public flyTo() {
     Mapbox.flyTo({
-      cameraPosition: {
-        // Sets the center of the map to Maracanã
-        target: {
-          lng: -2.395446,
-          lat: 47.929544,
-        },
-        zoom: 20, // Android, zoomLevel
-        bearing: 270, // Sets the orientation of the camera to look west
-        tilt: 40, // // Sets the tilt of the camera to 30 degrees
-        duration: 4000, // in seconds
+      // Sets the center of the map to Maracanã
+      target: {
+        lng: -2.395446,
+        lat: 47.929544,
       },
+      zoom: 20, // Android, zoomLevel
+      bearing: 270, // Sets the orientation of the camera to look west
+      tilt: 40, // // Sets the tilt of the camera to 30 degrees
+      duration: 4000, // in seconds
     });
   }
 
