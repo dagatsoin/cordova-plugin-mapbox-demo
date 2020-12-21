@@ -12,4 +12,5 @@ This is a demo for the [Mapbox plugin](https://github.com/dagatsoin/cordova-plug
 1. Clone this repository
 2. Set your Mapbox access token in the package.json
 3. `$ npm i`
-4. `$ npm run android`
+4. `$ cordova platforms add android`
+5. `$ npm run android`
